@@ -1,0 +1,22 @@
+﻿Step 1:
+Add a dependency of Reusable.LoginPage inside the Customer.UI
+
+Step 2:
+Remove main root path from Index.razor and make new Page Route url. [check Source Code]
+
+from @page "/" to @page "/index"
+
+Step 3:
+Make a new layout for login, Go to Shared folder, create a LandingLayout.razor [Check Source Code] 
+
+Step 4:
+Create Models folder and  Create a CustomerLoginModel class in Models folder. [Check Source Code]
+
+Step 5:
+Create a ViewModel folder and create a CustomerLoginViewModel class in view model. [Check Source Code] 
+
+Step 4:
+Create a ViewComponents folder.
+	4.1 Create a _Import.razor file inside the Components folder. import LandingLayout in _Import.razor file.  [Check Source Code] 
+
+	4.2 Create a CustomerLogin.razor component. [Check Source Code]

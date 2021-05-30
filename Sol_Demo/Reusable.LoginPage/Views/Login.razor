@@ -1,0 +1,32 @@
+﻿@inherits LoginViewModel
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-12">
+            <label>@this.Title</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-12">
+            <div class="form-group">
+                <label for="txtUserName">User Name:</label>
+                <InputText id="txtUserName" @bind-Value="this.LoginModel.UserName" class="form-control"></InputText>
+                <ValidationMessage For="@(()=> this.LoginModel.UserName)"></ValidationMessage>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-12">
+            <div class="form-group">
+                <label for="txtPassword">Password:</label>
+                <InputText id="txtPassword" type="password" @bind-Value="this.LoginModel.Password" class="form-control"></InputText>
+                <ValidationMessage For="@(()=> this.LoginModel.Password)"></ValidationMessage>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4 col-md-4">
+            <button type="submit" class="btn btn-dark" @onclick="this.OnSubmit">Submit</button>
+        </div>
+    </div>
+</div>

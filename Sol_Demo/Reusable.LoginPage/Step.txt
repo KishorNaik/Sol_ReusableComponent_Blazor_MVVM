@@ -1,0 +1,21 @@
+﻿Step 1:
+Download following package from nuget
+AntDesign
+
+Step 2:
+Create three folder respectively.
+Model
+View
+ViewModel.
+
+Step 3:
+Migrate _Import.blazor file from root path to View folder.
+
+Step 4:
+Inside the Login Model folder, Add Login Model Class. [Check Source Code]
+
+Step 5:
+Inside the ViewModel folder, add the login view model class. [Check source Code]
+
+Step 6:
+Inside the View folder, add the login.razor component and design the login page. [Check Source Code]

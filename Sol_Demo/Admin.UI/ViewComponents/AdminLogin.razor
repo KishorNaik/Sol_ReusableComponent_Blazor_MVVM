@@ -1,0 +1,9 @@
+﻿@page "/"
+@inherits AdminLoginViewModel
+
+<EditForm Model="base.LoginModel" Context="formContext">
+    <DataAnnotationsValidator />
+
+    <Login Title="Admin" LoginModel="base.LoginModel"
+           OnSubmit="@(()=> base.OnSubmitAction(formContext))"></Login>
+</EditForm>
