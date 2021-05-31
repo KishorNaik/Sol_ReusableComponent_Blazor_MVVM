@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Reusable.LoginPage;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,6 +32,7 @@ namespace Customer.UI
             services.AddSingleton<WeatherForecastService>();
 
             services.AddMediatR(typeof(Startup));
+            services.AddLoginPage();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

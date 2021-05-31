@@ -31,6 +31,7 @@ namespace Admin.UI
             services.AddSingleton<WeatherForecastService>();
 
             services.AddMediatR(typeof(Startup));
+            services.AddLoginPage();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
